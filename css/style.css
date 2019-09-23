@@ -1,0 +1,176 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1174px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  margin-top: 90px;
+  padding: 0 20px;
+}
+
+.container h2 {
+  display: none;
+}
+
+.container.navigation {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header .container {
+    margin-top: 26px;
+  }
+  .header .container .select {
+    display: none;
+  }
+  .header .container .region-name {
+    display: inline-block;
+  }
+  .header .container.navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 14px;
+  }
+}
+
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url("../fonts/ProximaNova-Bold.eot");
+  src: url("../fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Regular';
+  src: url("../fonts/ProximaNova-Regular.eot");
+  src: url("../fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Proxima Nova Regular', sans-serif;
+  background: #488ceb;
+  /* = Select region */
+}
+
+body .select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 30px;
+  background: #fff;
+}
+
+body .select select {
+  background: none;
+  border: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  height: 97px;
+  padding: 0 116px 0 32px;
+}
+
+body .select select:focus {
+  outline: none;
+}
+
+body .select button {
+  background: #fff;
+  border: 0;
+  color: #1086ff;
+  height: 100%;
+  padding: 0 32px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+body .region-name {
+  color: #fff;
+  font-size: 30px;
+  font-weight: normal;
+  margin: 0;
+}
+
+body .navigation a {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 15px;
+  text-decoration: none;
+}
+
+body .navigation a.self-position .fas {
+  margin-right: 6px;
+}
+
+.switch-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.switch-field::before {
+  content: 'º';
+  font-size: 18px;
+  color: #fff;
+  opacity: 0.5;
+  margin: 4px 8px;
+}
+
+.switch-field input {
+  position: absolute !important;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  width: 1px;
+  border: 0;
+  overflow: hidden;
+}
+
+.switch-field label {
+  background: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  padding: 4px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.switch-field label:hover {
+  cursor: pointer;
+}
+
+.switch-field input:checked + label {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.switch-field label:first-of-type {
+  border-radius: 8px 0 0 8px;
+  border-right: none;
+}
+
+.switch-field label:last-of-type {
+  border-radius: 0 8px 8px 0;
+  border-left: none;
+}
+/*# sourceMappingURL=style.css.map */

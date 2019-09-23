@@ -1,0 +1,10 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* .container {
+  max-width: 1366px;
+  margin: auto;
+}
+/*# sourceMappingURL=grid.css.map */

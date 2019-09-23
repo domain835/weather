@@ -1,0 +1,32 @@
+.self-position {
+	position: relative;
+
+	i {
+		// margin: 50px 0;
+		position: absolute;
+		display: block;
+		width: 0px;
+		height: 0px;
+		border-right: 0px solid transparent;
+		border-bottom: 6px solid #91baf3;
+		border-left: 9px solid transparent;
+		transform: rotate(-10deg);
+		top: 0;
+		left: 0;
+	}
+
+	i:after {
+		position: absolute;
+		display: block;
+		top: 0;
+		left: -9px;
+		width: 0px;
+		height: 0px;
+		border-right: 9px solid transparent;
+		border-bottom: 6px solid #91baf3;
+		border-left: 9px solid transparent;
+		transform: rotate(-70deg);
+		content: '';
+	}
+}
+

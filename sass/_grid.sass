@@ -1,0 +1,29 @@
+*
+	box-sizing: border-box
+
+.container
+	max-width: 1174px
+	display: flex
+	width: 100%
+	justify-content: space-between
+	margin: auto
+	margin-top: 90px
+	padding: 0 20px
+
+	h2
+		display: none
+		
+	&.navigation
+		display: none
+
+@media (max-width: 768px) 
+	.header
+		.container
+			margin-top: 26px
+			.select
+				display: none
+			.region-name
+				display: inline-block
+			&.navigation
+				display: flex
+				margin-top: 14px

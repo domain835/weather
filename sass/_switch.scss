@@ -1,0 +1,52 @@
+.switch-field {
+	display: flex;
+
+		&::before {
+			content: 'º';
+			font-size: 18px;
+			color: #fff;
+			opacity: 0.5;
+			margin: 4px 8px;
+		}
+}
+
+.switch-field input {
+	position: absolute !important;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	width: 1px;
+	border: 0;
+	overflow: hidden;
+}
+
+.switch-field label {
+	background: none;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1;
+	text-align: center;
+	padding: 4px 14px;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	transition: all 0.1s ease-in-out;
+}
+
+.switch-field label:hover {
+	cursor: pointer;
+}
+
+.switch-field input:checked + label {
+	background-color: rgba(255, 255, 255, 0.2);
+	color: rgba(255, 255, 255, 1);
+
+}
+
+.switch-field label:first-of-type {
+	border-radius: 8px 0 0 8px;
+	border-right: none;
+}
+
+.switch-field label:last-of-type {
+	border-radius: 0 8px 8px 0;
+	border-left: none;
+}
