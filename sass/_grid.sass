@@ -13,6 +13,21 @@ header
 	flex: 0 0 auto
 	background-color: blues
 
+.container
+	max-width: 1174px
+	display: flex
+	width: 100%
+	justify-content: space-between
+	margin: auto
+	margin-top: 80px
+	padding: 0 20px
+
+	h2
+		display: none
+		
+	&.navigation
+		display: none
+
 .main-content
 	flex: 1 0 auto
 	display: flex
@@ -21,22 +36,24 @@ header
 
 footer
 	flex: 0 0 auto
-	background-color: green
 
-.container
-	max-width: 1174px
-	display: flex
-	width: 100%
-	justify-content: space-between
-	margin: auto
-	margin-top: 90px
-	padding: 0 20px
+	.container
+		margin-top: 0
+		margin-bottom: 120px
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		padding: 0
 
-	h2
-		display: none
-		
-	&.navigation
-		display: none
+
+		dl
+			padding: 20px
+			font-size: 18px
+			margin: 0
+
+			dd
+				font-size: 25px
+				margin-top: 4px
 
 @media (max-width: 768px) 
 	.header
@@ -56,13 +73,26 @@ footer
 				height: 70px
 				top: -30px
 				right: -4px
-				
 			span
 				font-size: 90px
 
 			p
 				font-size: 18px
 				margin-left: 12px
+
+	footer
+		flex: 0 0 auto
+
+		.container
+			margin-bottom: 20px
+
+			dl
+				font-size: 15px
+				width: 50%
+
+				dd
+					font-size: 18px
+					margin-top: 4px
 
 
 

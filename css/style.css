@@ -26,6 +26,28 @@ header {
   background-color: blues;
 }
 
+.container {
+  max-width: 1174px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  margin-top: 80px;
+  padding: 0 20px;
+}
+
+.container h2 {
+  display: none;
+}
+
+.container.navigation {
+  display: none;
+}
+
 .main-content {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
@@ -45,29 +67,31 @@ footer {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
-  background-color: green;
 }
 
-.container {
-  max-width: 1174px;
+footer .container {
+  margin-top: 0;
+  margin-bottom: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: auto;
-  margin-top: 90px;
-  padding: 0 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
 }
 
-.container h2 {
-  display: none;
+footer .container dl {
+  padding: 20px;
+  font-size: 18px;
+  margin: 0;
 }
 
-.container.navigation {
-  display: none;
+footer .container dl dd {
+  font-size: 25px;
+  margin-top: 4px;
 }
 
 @media (max-width: 768px) {
@@ -97,6 +121,22 @@ footer {
   .main-content .temp p {
     font-size: 18px;
     margin-left: 12px;
+  }
+  footer {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+  }
+  footer .container {
+    margin-bottom: 20px;
+  }
+  footer .container dl {
+    font-size: 15px;
+    width: 50%;
+  }
+  footer .container dl dd {
+    font-size: 18px;
+    margin-top: 4px;
   }
 }
 
@@ -142,6 +182,7 @@ footer {
 body {
   font-family: 'Proxima Nova Regular', sans-serif;
   background: #488ceb;
+  color: #fff;
   /* = Select region */
 }
 
